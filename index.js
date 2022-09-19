@@ -32,6 +32,8 @@ function removeBook(book) {
   populateFields();
 }
 
+
+// Function to dynamicaaly add books
 const displayBooks = () => {
   listBooks.innerHTML = '';
   books.map((book) => {
