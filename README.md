@@ -16,11 +16,16 @@
 
 ## Authors
 
-👤 **Author**
+👤 **Shedrack Sunday**
 
 - GitHub: [Shedrack Sunday](https://github.com/Shedrack-sunday)
 - LinkedIn: [Shedrack](https://linkedin.com/in/Shedrack-sunday)
 
+
+👤 **Camilo Vela**
+
+- GitHub: [@camilovelag](https://github.com/camilovelag)
+- LinkedIn: [camilovelag](https://linkedin.com/in/camilovelag)
 
 ## 🤝 Contributing
 
