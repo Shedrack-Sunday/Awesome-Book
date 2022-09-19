@@ -26,6 +26,7 @@ const populateFields = () => {
   localStorage.setItem('savedBooks', JSON.stringify(books));
 };
 
+//DFunction to remove books
 function removeBook(book) {
   const result = books.filter((b) => b !== book);
   books = result;
