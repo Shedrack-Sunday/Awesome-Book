@@ -9,7 +9,8 @@
 
 - Webhint
 - Styleint
-- Technologies used
+- HTML
+- JavaScript
 
 
 
@@ -17,8 +18,8 @@
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Shedrack-sunday)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Shedrack-sunday)
+- GitHub: [Shedrack Sunday](https://github.com/Shedrack-sunday)
+- LinkedIn: [Shedrack](https://linkedin.com/in/Shedrack-sunday)
 
 
 ## 🤝 Contributing
