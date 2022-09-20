@@ -2,10 +2,8 @@ const listBooks = document.querySelector('.books-list');
 const form = document.querySelector('.form-input');
 const [title, author] = form.elements;
 
-const inputBook = {};
-
 class Book {
-  constructor(title, author) {
+  constructor(title = "", author = "") {
     this.title = title;
     this.author = author;
   }
@@ -28,13 +26,16 @@ class bookList {
   }
 }
 
+// check if it is needed to insert books declaration inside a block or function
 let books = [];
+// check if it is needed to insert books declaration inside a block or function
 
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
 }
 
 const list = new bookList(books);
+const inputBook = new Book();
 
 title.addEventListener('change', () => {
   inputBook.title = title.value;
