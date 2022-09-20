@@ -4,15 +4,12 @@ const [title, author] = form.elements;
 
 const inputBook = {};
 
-// ------ CLASSES ------
 class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
   }
 }
-
-// ------ GROUP THESE METHODS IN A CLASS ------
 
 class bookList {
   constructor(books = []) {
@@ -23,9 +20,13 @@ class bookList {
     this.books.push(newBook);
     localStorage.setItem('savedBooks', JSON.stringify(this.books));
   }
-}
 
-//Activate interaction wiht webpage
+  removeBook(book) {
+    let result = this.books.filter((b) => b !== book);
+    this.books = result;
+    localStorage.setItem('savedBooks', JSON.stringify(this.books));
+  }
+}
 
 let books = [];
 
@@ -50,21 +51,6 @@ form.addEventListener('submit', (e) => {
   displayBooks();
 });
 
-
-// -------MODIFY THE CODE BELOW THIS LINE----------------------------------------------
-// -------MODIFY THE CODE BELOW THIS LINE----------------------------------------------
-// -------MODIFY THE CODE BELOW THIS LINE----------------------------------------------
-
-
-
-// DFunction to remove books
-// function removeBook(book) {
-//   const result = books.filter((b) => b !== book);
-//   books = result;
-//   populateFields();
-// }
-
-// Function to dynamicaaly add books
 const displayBooks = () => {
   listBooks.innerHTML = '';
   books.map((book) => {
@@ -82,16 +68,12 @@ const displayBooks = () => {
     bookDiv.appendChild(hrElementet);
     listBooks.appendChild(bookDiv);
 
-    // deleteBtn.addEventListener('click', () => {
-    //   removeBook(book);
-    //   listBooks.removeChild(bookDiv);
-    // });
+    deleteBtn.addEventListener('click', () => {
+      list.removeBook(book);
+      listBooks.removeChild(bookDiv);
+    });
     return listBooks;
   });
 };
 
-
-
-// The functions below displays the new entries,  an store to
-// local storage
 displayBooks();
