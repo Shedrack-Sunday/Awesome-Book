@@ -1,1 +1,89 @@
 /* Ready to use */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  padding: 1em;
+  margin: 0;
+  font-family: 'Quicksand', 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: #0d1da7;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.3rem;
+  width: 100%;
+  border: 0.125rem #333 solid;
+  border-radius: 0.25rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.list-books {
+  border: 0.125rem solid #333;
+  border-radius: 0.25rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.title-list-books,
+.title-form-add {
+  text-align: center;
+  color: #f1356d;
+}
+
+.title-form-add::before {
+  content: '';
+  height: 3px;
+  width: 6rem;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  bottom: 2rem;
+  z-index: -1;
+  border-radius: 3px;
+  background: #f1356d;
+}
+
+.form-input {
+  margin: 0 auto;
+  max-width: 16rem;
+  box-sizing: border-box;
+}
