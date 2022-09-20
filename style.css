@@ -1,13 +1,16 @@
 /* Ready to use */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-html,
+html * {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #333;
+  font-weight: bolder;
+}
+
 body {
   padding: 1em;
   margin: 0;
-  font-family: 'Quicksand', 'Courier New', Courier, monospace;
   box-sizing: border-box;
-  color: #333;
 }
 
 ul {
@@ -23,20 +26,17 @@ li {
 }
 
 button {
-  background: #0d1da7;
-  color: #fff;
-  font-weight: bold;
   letter-spacing: 1px;
-  padding: 0.4rem;
-  border: 0;
-  border-radius: 6px;
+  border: 0.2rem solid;
+  box-shadow: 3px 3px;
+  border-radius: 2px;
   cursor: pointer;
 }
 
 input {
   padding: 0.3rem;
   width: 100%;
-  border: 0.125rem #333 solid;
+  border: 0.20rem #333 solid;
   border-radius: 0.25rem;
 }
 
@@ -50,7 +50,7 @@ tr:nth-child(even) {
 }
 
 .list-books {
-  border: 0.125rem solid #333;
+  border: 0.20rem solid #333;
   border-radius: 0.25rem;
   max-width: 32rem;
   margin: 0 auto;
@@ -66,7 +66,6 @@ tr:nth-child(even) {
 .title-list-books,
 .title-form-add {
   text-align: center;
-  color: #f1356d;
 }
 
 .title-form-add::before {
@@ -79,7 +78,6 @@ tr:nth-child(even) {
   bottom: 2rem;
   z-index: -1;
   border-radius: 3px;
-  background: #f1356d;
 }
 
 .form-input {
