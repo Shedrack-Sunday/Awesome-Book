@@ -1,1 +1,89 @@
-/* Ready to use */
+html * {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #333;
+  font-weight: bolder;
+}
+
+body {
+  padding: 1em;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+button {
+  letter-spacing: 1px;
+  border: 0.2rem solid;
+  box-shadow: 3px 3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.3rem;
+  width: 100%;
+  border: 0.2rem #333 solid;
+  border-radius: 0.25rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.list-books {
+  border: 0.2rem solid #333;
+  border-radius: 0.25rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.title-list-books,
+.title-form-add {
+  text-align: center;
+}
+
+.title-form-add::before {
+  content: '';
+  height: 3px;
+  width: 6rem;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  bottom: 2rem;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.form-input {
+  margin: 0 auto;
+  max-width: 16rem;
+  box-sizing: border-box;
+}
+
+.division {
+  margin: 1.5rem auto;
+  max-width: 8rem;
+  border-bottom: 0.2rem solid rgb(0, 0, 0);
+}
