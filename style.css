@@ -33,7 +33,7 @@ button {
 input {
   padding: 0.3rem;
   width: 100%;
-  border: 0.20rem #333 solid;
+  border: 0.2rem #333 solid;
   border-radius: 0.25rem;
 }
 
@@ -47,7 +47,7 @@ tr:nth-child(even) {
 }
 
 .list-books {
-  border: 0.20rem solid #333;
+  border: 0.2rem solid #333;
   border-radius: 0.25rem;
   max-width: 32rem;
   margin: 0 auto;

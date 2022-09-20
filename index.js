@@ -7,7 +7,7 @@ let books = new Array([]);
 
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
-} 
+}
 
 title.addEventListener('change', () => {
   inputBook.title = title.value;
@@ -59,7 +59,7 @@ const Book = class {
         this.removeBook(book);
         listBooks.removeChild(bookDiv);
       });
-      return listBooks;      
+      return listBooks;
     });
   };
 };
