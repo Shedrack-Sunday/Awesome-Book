@@ -3,37 +3,11 @@ const form = document.querySelector('.form-input');
 const [title, author] = form.elements;
 
 const inputBook = {};
-
-// ------ CLASSES ------
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
-
-// ------ GROUP THESE METHODS IN A CLASS ------
-
-class bookList {
-  constructor(books = []) {
-    this.books = books;
-  }
-
-  addBook(newBook) {
-    this.books.push(newBook);
-    localStorage.setItem('savedBooks', JSON.stringify(this.books));
-  }
-}
-
-//Activate interaction wiht webpage
-
 let books = [];
 
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
 }
-
-const list = new bookList(books);
 
 title.addEventListener('change', () => {
   inputBook.title = title.value;
@@ -43,26 +17,21 @@ author.addEventListener('change', () => {
   inputBook.author = author.value;
 });
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  list.addBook(new Book(inputBook.title, inputBook.author));
-  form.submit();
-  displayBooks();
-});
+function Book(title, author) {
+  this.title = title;
+  this.author = author;
+}
 
-
-// -------MODIFY THE CODE BELOW THIS LINE----------------------------------------------
-// -------MODIFY THE CODE BELOW THIS LINE----------------------------------------------
-// -------MODIFY THE CODE BELOW THIS LINE----------------------------------------------
-
-
+const populateFields = () => {
+  localStorage.setItem('savedBooks', JSON.stringify(books));
+};
 
 // DFunction to remove books
-// function removeBook(book) {
-//   const result = books.filter((b) => b !== book);
-//   books = result;
-//   populateFields();
-// }
+function removeBook(book) {
+  const result = books.filter((b) => b !== book);
+  books = result;
+  populateFields();
+}
 
 // Function to dynamicaaly add books
 const displayBooks = () => {
@@ -82,16 +51,27 @@ const displayBooks = () => {
     bookDiv.appendChild(hrElementet);
     listBooks.appendChild(bookDiv);
 
-    // deleteBtn.addEventListener('click', () => {
-    //   removeBook(book);
-    //   listBooks.removeChild(bookDiv);
-    // });
+    deleteBtn.addEventListener('click', () => {
+      removeBook(book);
+      listBooks.removeChild(bookDiv);
+    });
     return listBooks;
   });
 };
 
+const addBook = (newBook) => {
+  books.push(newBook);
+  populateFields();
+  displayBooks();
+};
 
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  addBook(new Book(inputBook.title, inputBook.author));
+  form.submit();
+});
 
 // The functions below displays the new entries,  an store to
 // local storage
 displayBooks();
+populateFields();
