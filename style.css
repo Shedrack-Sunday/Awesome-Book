@@ -84,6 +84,6 @@ tr:nth-child(even) {
 
 .division {
   margin: 1.5rem auto;
-  width: 25vw;
+  max-width: 8rem;
   border-bottom: 0.2rem solid rgb(0, 0, 0);
 }
