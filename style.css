@@ -1,6 +1,3 @@
-/* Ready to use */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 html * {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #333;
@@ -54,7 +51,6 @@ tr:nth-child(even) {
   border-radius: 0.25rem;
   max-width: 32rem;
   margin: 0 auto;
-  margin-bottom: 4rem;
 }
 
 .book-container {
@@ -84,4 +80,10 @@ tr:nth-child(even) {
   margin: 0 auto;
   max-width: 16rem;
   box-sizing: border-box;
+}
+
+.division {
+  margin: 1.5rem auto;
+  width: 25vw;
+  border-bottom: 0.2rem solid rgb(0, 0, 0);
 }
