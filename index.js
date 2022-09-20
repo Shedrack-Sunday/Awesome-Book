@@ -26,9 +26,7 @@ class bookList {
   }
 }
 
-// check if it is needed to insert books declaration inside a block or function
-let books = [];
-// check if it is needed to insert books declaration inside a block or function
+let books = new bookList();
 
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
