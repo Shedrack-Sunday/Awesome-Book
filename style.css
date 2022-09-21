@@ -95,7 +95,6 @@ tr:nth-child(even) {
   padding: 0.5rem;
 }
 
-
 .container {
   display: flex;
   flex-flow: row wrap;
