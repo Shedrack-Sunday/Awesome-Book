@@ -11,13 +11,8 @@ body {
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-}
-
 li {
-  display: flex;
-  justify-content: flex-end;
+  list-style-type: none;
 }
 
 button {
@@ -108,13 +103,15 @@ tr:nth-child(even) {
   border: 0.2rem #333 solid;
 }
 
-.contact > ul > li {
-  justify-content: center;
-}
-
 .contact {
   max-width: 32rem;
   margin: 0 auto 3rem;
+}
+
+.contact-list > li {
+  justify-content: flex-start;
+  list-style-type: disc;
+  margin-left: 2.5rem;
 }
 
 a {
@@ -130,4 +127,8 @@ a {
 
 .books-wrapper > h2 {
   margin-bottom: 1rem;
+}
+
+header, footer {
+  margin: 2rem auto;
 }
