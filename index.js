@@ -86,7 +86,7 @@ const settings = {
   },
   addNew: {
     display: ['none', 'block', 'none'],
-    color: [ '#333', '#0000ff', '#333'],
+    color: ['#333', '#0000ff', '#333'],
   },
   contact: {
     display: ['none', 'none', 'block'],
