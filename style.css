@@ -82,12 +82,6 @@ tr:nth-child(even) {
   box-sizing: border-box;
 }
 
-.division {
-  margin: 1.5rem auto;
-  max-width: 8rem;
-  border-bottom: 0.2rem solid rgb(0, 0, 0);
-}
-
 /* Temporary styles */
 
 header, .pages {
