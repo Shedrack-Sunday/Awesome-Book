@@ -94,7 +94,7 @@ const settings = {
   },
 };
 
-/*eslint-disable */
+/* eslint-disable */
 
 const populateSettings = (i) => {
   booksContainer.style.display = i.display[0];
@@ -106,7 +106,7 @@ const populateSettings = (i) => {
   contactPage.style.color = i.color[2];
 };
 
-/*eslint-enable */
+/* eslint-enable */
 
 listPage.addEventListener('click', () => {
   populateSettings(settings.list);
