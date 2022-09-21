@@ -55,13 +55,13 @@ tr:nth-child(even) {
   padding: 3px 10px 5px;
 }
 
+.title {
+  margin: 3rem auto;
+}
+
 .title-form-add .title {
   text-align: center;
   font-size: 2rem;
-}
-
-.title {
-  margin: 3rem auto;
 }
 
 .title-form-add::before {
@@ -94,7 +94,6 @@ tr:nth-child(even) {
 .form-input > ul > li {
   padding: 0.5rem;
 }
-
 
 .container {
   display: flex;
@@ -130,6 +129,6 @@ a {
   margin-bottom: 1rem;
 }
 
-header footer {
+.margin {
   margin: 2rem auto;
 }
