@@ -87,3 +87,15 @@ tr:nth-child(even) {
   max-width: 8rem;
   border-bottom: 0.2rem solid rgb(0, 0, 0);
 }
+
+/* Temporary styles */
+
+header, .pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pages > li {
+  padding: 0.4rem;
+}
