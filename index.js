@@ -1,4 +1,5 @@
 const listBooks = document.querySelector('.list-books');
+const booksContainer = document.querySelector('.books-container');
 const form = document.querySelector('.form-input');
 const contact = document.querySelector('.contact');
 const [title, author] = form.elements;
@@ -98,7 +99,7 @@ const settings = {
 }
 
 const populateSettings = (i) => {
-  listBooks.style.display = i.display[0];
+  booksContainer.style.display = i.display[0];
   form.style.display = i.display[1];
   contact.style.display = i.display[2];
 
