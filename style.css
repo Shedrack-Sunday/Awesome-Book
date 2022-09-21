@@ -26,12 +26,15 @@ button {
   box-shadow: 3px 3px;
   border-radius: 2px;
   cursor: pointer;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 input {
   width: 100%;
   border: 0.2rem #333 solid;
   border-radius: 0.25rem;
+  padding: 0 5px;
 }
 
 table {
@@ -47,16 +50,23 @@ tr:nth-child(even) {
   border: 0.2rem solid #333;
   border-radius: 0.25rem;
   max-width: 32rem;
+  margin: 0 auto 1.5rem;
 }
 
 .book-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px 5px;
 }
 
 .title-form-add, .title {
   text-align: center;
   font-size: 2rem;
+}
+
+.title {
+  margin: 3rem auto;
 }
 
 .title-form-add::before {
@@ -104,10 +114,7 @@ tr:nth-child(even) {
 
 .contact {
   max-width: 32rem;
-}
-
-.contact > h2 {
-  font-size: 1.5rem;
+  margin: 0 auto 3rem;
 }
 
 a {
@@ -121,4 +128,6 @@ a {
   text-align: center;
 }
 
-
+.books-wrapper > h2 {
+  margin-bottom: 1rem;
+}
