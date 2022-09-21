@@ -72,3 +72,27 @@ form.addEventListener('submit', (e) => {
 
 Book.displayBooks();
 populateFields();
+
+// ------- EVENT LISTENERS ------- //
+
+const listPage = document.querySelector('.list-page');
+const addNewPage = document.querySelector('.add-new-page');
+const contactPage = document.querySelector('.contact-page');
+
+listPage.addEventListener('click', () => {
+  document.querySelector('.list-books').style.display = 'block';
+  document.querySelector('.form-input').style.display = 'none';
+  document.querySelector('.contact').style.display = 'none';
+});
+
+addNewPage.addEventListener('click', () => {
+  document.querySelector('.list-books').style.display = 'none';
+  document.querySelector('.form-input').style.display = 'block';
+  document.querySelector('.contact').style.display = 'none';
+});
+
+contactPage.addEventListener('click', () => {
+  document.querySelector('.list-books').style.display = 'none';
+  document.querySelector('.form-input').style.display = 'none';
+  document.querySelector('.contact').style.display = 'block';
+});
