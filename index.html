@@ -10,12 +10,23 @@
 </head>
 
 <body>
-    <h2 class="title-list-books">All awesome books</h2>
-    <div class="list-books">
+    <header class="container border margin">
+        <h2 class="title-list-books">All awesome books</h2>
+        <nav id="navBar" class="navBar">
+            <ul class="pages container">
+                <li><a href="#" class="list-page">List</a></li>
+                <li><a href="#" class="add-new-page">Add new</a></li>
+                <li><a href="#" class="contact-page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="books-wrapper">
+        <h2 class="title center">All awesome books</h2>
+        <div class="list-books">
+        </div>
     </div>
-    <div class="division"></div>
-    <h2 class="title-form-add">Add a new book</h2>
     <form class="form-input">
+        <h2 class="title-form-add">Add a new book</h2>
         <ul>
             <li>
                 <input type="text" name="title" placeholder="Title" required />
@@ -28,6 +39,19 @@
             </li>
         </ul>
     </form>
+    <div class="contact container">
+        <h2 class="title">Contact information</h2>
+        <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+        <ul class="contact-list">
+            <li>Our e-mail: Hannania002@gmail.com / camilo.vela.galindo@gmail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>Our address: Streetname 22, 84503 City, Country</li>
+       </ul>
+    </div>
+     <footer class="container border margin"> 
+        <span>Copyright...</span>
+      </footer>
+
     <script src='index.js'></script>
 </body>
 

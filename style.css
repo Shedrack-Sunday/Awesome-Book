@@ -2,24 +2,17 @@ html * {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #333;
   font-weight: bolder;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  padding: 1em;
-  margin: 0;
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
 li {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  margin-bottom: 1rem;
+  list-style-type: none;
 }
 
 button {
@@ -28,13 +21,15 @@ button {
   box-shadow: 3px 3px;
   border-radius: 2px;
   cursor: pointer;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 input {
-  padding: 0.3rem;
   width: 100%;
   border: 0.2rem #333 solid;
   border-radius: 0.25rem;
+  padding: 0 5px;
 }
 
 table {
@@ -50,25 +45,29 @@ tr:nth-child(even) {
   border: 0.2rem solid #333;
   border-radius: 0.25rem;
   max-width: 32rem;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
 }
 
 .book-container {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  align-items: center;
+  padding: 3px 10px 5px;
 }
 
-.title-list-books,
-.title-form-add {
+.title {
+  margin: 3rem auto;
+}
+
+.title-form-add .title {
   text-align: center;
+  font-size: 2rem;
 }
 
 .title-form-add::before {
   content: '';
   height: 3px;
   width: 6rem;
-  margin: 0 auto;
   display: flex;
   position: relative;
   bottom: 2rem;
@@ -77,13 +76,59 @@ tr:nth-child(even) {
 }
 
 .form-input {
-  margin: 0 auto;
   max-width: 16rem;
   box-sizing: border-box;
+  margin: 3rem auto;
 }
 
-.division {
-  margin: 1.5rem auto;
-  max-width: 8rem;
-  border-bottom: 0.2rem solid rgb(0, 0, 0);
+.form-input > ul {
+  margin-top: 3rem;
+}
+
+.contact-list > li {
+  justify-content: flex-start;
+  list-style-type: disc;
+  margin-left: 2.5rem;
+}
+
+.form-input > ul > li {
+  padding: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 40rem;
+  gap: 10px;
+  padding: 0.2rem 1rem 0.2rem 1.5rem;
+}
+
+.border {
+  border: 0.2rem #333 solid;
+}
+
+.contact {
+  max-width: 32rem;
+  margin: 0 auto 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.books-wrapper > h2 {
+  margin-bottom: 1rem;
+}
+
+.margin {
+  margin: 2rem auto;
 }
