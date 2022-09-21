@@ -93,3 +93,13 @@ header, .pages {
 .pages > li {
   padding: 0.4rem;
 }
+
+footer {
+  display: flex;
+  align-self: flex-end;
+  border: 2px #333 solid;
+  padding: 10px;
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 90%;
+}
