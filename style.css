@@ -55,7 +55,7 @@ tr:nth-child(even) {
   padding: 3px 10px 5px;
 }
 
-.title-form-add, .title {
+.title-form-add .title {
   text-align: center;
   font-size: 2rem;
 }
@@ -85,9 +85,16 @@ tr:nth-child(even) {
   margin-top: 3rem;
 }
 
+.contact-list > li {
+  justify-content: flex-start;
+  list-style-type: disc;
+  margin-left: 2.5rem;
+}
+
 .form-input > ul > li {
   padding: 0.5rem;
 }
+
 
 .container {
   display: flex;
@@ -108,12 +115,6 @@ tr:nth-child(even) {
   margin: 0 auto 3rem;
 }
 
-.contact-list > li {
-  justify-content: flex-start;
-  list-style-type: disc;
-  margin-left: 2.5rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -129,6 +130,6 @@ a {
   margin-bottom: 1rem;
 }
 
-header, footer {
+header footer {
   margin: 2rem auto;
 }

@@ -79,24 +79,20 @@ form.addEventListener('submit', (e) => {
 Book.displayBooks();
 populateFields();
 
-// ------- EVENT LISTENERS ------- //
-
 const settings = {
   list: {
     display: ['block', 'none', 'none'],
     color: ['#0000ff', '#333', '#333'],
   },
-  
   addNew: {
     display: ['none', 'block', 'none'],
     color: [ '#333', '#0000ff', '#333'],
   },
-  
   contact: {
     display: ['none', 'none', 'block'],
     color: ['#333', '#333', '#0000ff'],
   },
-}
+};
 
 const populateSettings = (i) => {
   booksContainer.style.display = i.display[0];
@@ -106,7 +102,7 @@ const populateSettings = (i) => {
   listPage.style.color = i.color[0];
   addNewPage.style.color = i.color[1];
   contactPage.style.color = i.color[2];
-}
+};
 
 listPage.addEventListener('click', () => {
   populateSettings(settings.list);
