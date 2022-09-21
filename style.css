@@ -2,24 +2,22 @@ html * {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #333;
   font-weight: bolder;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  padding: 1em;
-  margin: 0;
   box-sizing: border-box;
 }
 
 ul {
   list-style: none;
-  padding: 0;
 }
 
 li {
   display: flex;
   justify-content: flex-end;
-  margin: 0;
-  margin-bottom: 1rem;
 }
 
 button {
@@ -31,7 +29,6 @@ button {
 }
 
 input {
-  padding: 0.3rem;
   width: 100%;
   border: 0.2rem #333 solid;
   border-radius: 0.25rem;
@@ -50,25 +47,22 @@ tr:nth-child(even) {
   border: 0.2rem solid #333;
   border-radius: 0.25rem;
   max-width: 32rem;
-  margin: 0 auto;
 }
 
 .book-container {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
 }
 
-.title-list-books,
-.title-form-add {
+.title-form-add, .title {
   text-align: center;
+  font-size: 2rem;
 }
 
 .title-form-add::before {
   content: '';
   height: 3px;
   width: 6rem;
-  margin: 0 auto;
   display: flex;
   position: relative;
   bottom: 2rem;
@@ -77,30 +71,54 @@ tr:nth-child(even) {
 }
 
 .form-input {
-  margin: 0 auto;
   max-width: 16rem;
   box-sizing: border-box;
+  margin: 3rem auto;
 }
 
-/* Temporary styles */
+.form-input > ul {
+  margin-top: 3rem;
+}
 
-header, .pages {
+.form-input > ul > li {
+  padding: 0.5rem;
+}
+
+.container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
   justify-content: space-between;
-}
-
-.pages > li {
-  padding: 0.4rem;
-}
-
-footer {
-  display: flex;
-  align-self: flex-end;
-  border: 2px #333 solid;
-  padding: 10px;
   max-width: 40rem;
-  margin: 0 auto;
-  width: 90%;
-  margin-top: 12px;
+  gap: 10px;
+  padding: 0.2rem 1rem 0.2rem 1.5rem;
 }
+
+.border {
+  border: 0.2rem #333 solid;
+}
+
+.contact > ul > li {
+  justify-content: center;
+}
+
+.contact {
+  max-width: 32rem;
+}
+
+.contact > h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
